@@ -1,0 +1,35 @@
+<html>
+	<head> <title>Array de atributos</title>
+	<meta charset="utf-8"> 
+	<script type="text/javascript" src="Script.js"> </script>
+	</head>
+	<body onload="init()">
+		
+		<p>Selecione na lista abaixo o polígono desejado: </p>
+		
+		<div>
+			
+			<form>
+				<select id="selectList" name="selectList" onchange="updateOption()">
+					<option value="0">2</option>
+					<option value="1">3</option>
+					<option value="2">4</option>
+					<option value="3">5</option>
+					<option value="4">6</option>
+					<option value="5">7</option>
+					<option value="6">8</option>
+				</select>
+			</form>
+		</div>
+			
+		<canvas id="myCanvas" onmousedown="whichEvent(event)" onmouseup="updateLines(event)" width="600" height="300" style="border:2px solid #000000;"></canvas>
+
+		<p>1) Com o botão esquerdo do mouse, arraste e mova os pontos inicias e finais da reta ou a reta inteira utilizando o ponto médio. </p>
+
+		<p>2) Com o botão direito do mouse, clique próximo de um dos pontos da reta (inicial, final ou medio) e arraste para quebrar a mesma reta em duas.</p>
+
+		<p>3) Selecione na lista acima do canvas, o tamanho do polígono que deseja que seja desenhado na tela (apagará o atual).</p>
+		
+	</body>
+</html>
+
